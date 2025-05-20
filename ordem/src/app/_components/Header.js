@@ -1,14 +1,12 @@
-export function Header () {
-    return (
-        <header className="bg-blue-500 text-white p-4 shadow">
-            <div className="max-w-6-1 mx-auto flex justify-between items-center ">
-            <h1 className="font-bold text-2xl">Ordem de livros</h1>
-            <nav className="">
-                <a className="ml-5 font-bold " href="">Home</a>
-                <a className="ml-5 font-bold " href="">Teste</a>
-                <a className="ml-5 font-bold " href="">E-book</a>
-            </nav>
-                </div>
-        </header>
-    )
-} 
+export default function Header() {
+  return (
+    <header className="w-full px-6 py-4 flex justify-between items-center border-b">
+      <h1 className="text-xl font-bold">Ordem de Livros</h1>
+      <nav className="space-x-4">
+        <a href="#teste" className="text-gray-700 hover:underline">Teste</a>
+        <a href="#ebook" className="text-gray-700 hover:underline">E-book</a>
+        <a href="#sobre" className="text-gray-700 hover:underline">Sobre</a>
+      </nav>
+    </header>
+  );
+}
